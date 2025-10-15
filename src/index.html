@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
+  <title>Industrial Gauges Monitor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Industrial Monitoring System</h1>
+  </header>
+  
+  <main class="gauge-container">
+    <div class="gauge-panel" id="power-gauge">
+      <h2>Power</h2>
+      <div class="gauge-placeholder">Power Gauge</div>
+      <div class="gauge-value">0%</div>
+    </div>
+    
+    <div class="gauge-panel" id="water-gauge">
+      <h2>Water Level</h2>
+      <div class="gauge-placeholder">Water Gauge</div>
+      <div class="gauge-value">0%</div>
+    </div>
+    
+    <div class="gauge-panel" id="sewer-gauge">
+      <h2>Sewer Level</h2>
+      <div class="gauge-placeholder">Sewer Gauge</div>
+      <div class="gauge-value">0%</div>
+    </div>
+  </main>
+  
+  <script src="renderer.js"></script>
+</body>
+</html>

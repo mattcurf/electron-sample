@@ -1,0 +1,35 @@
+{
+  "name": "industrial-gauges-monitor",
+  "version": "1.0.0",
+  "description": "Cross-platform Electron app displaying industrial gauges for power, water, and sewer monitoring",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "NODE_ENV=development electron .",
+    "build": "electron-builder",
+    "build:current": "electron-builder --publish=never",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux",
+    "build:all": "electron-builder --mac --win --linux",
+    "test": "jest",
+    "lint": "eslint .",
+    "dist": "npm run build"
+  },
+  "keywords": [
+    "electron",
+    "industrial",
+    "monitoring",
+    "gauges"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^38.2.2",
+    "electron-builder": "^26.0.12",
+    "electron-reload": "^2.0.0-alpha.1",
+    "eslint": "^9.37.0",
+    "jest": "^30.2.0"
+  }
+}

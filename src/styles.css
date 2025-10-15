@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, #1e1e1e, #2d2d2d);
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: linear-gradient(135deg, #0066cc, #004499);
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+main.gauge-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+.gauge-panel {
+  background: linear-gradient(145deg, #3a3a3a, #2a2a2a);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid #555;
+}
+
+.gauge-panel h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #cccccc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gauge-placeholder {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #666;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #404040, #2a2a2a);
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.gauge-value {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+#power-gauge .gauge-value {
+  color: #ffcc00;
+}
+
+#water-gauge .gauge-value {
+  color: #3399ff;
+}
+
+#sewer-gauge .gauge-value {
+  color: #ff9933;
+}
+
+@media (max-width: 768px) {
+  main.gauge-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .gauge-panel {
+    padding: 1.5rem;
+  }
+  
+  .gauge-placeholder {
+    width: 150px;
+    height: 150px;
+  }
+}
