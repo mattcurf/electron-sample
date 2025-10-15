@@ -2,6 +2,9 @@
 
 Cross-platform Electron app displaying industrial gauges for power, water, and sewer monitoring.
 
+![Test Image 1](docs/app_package.jpg)
+![Test Image 1](docs/app.jpg)
+
 ## Getting Started
 
 ### Prerequisites
