@@ -53,6 +53,19 @@ electron-sample/
 └── assets/           # App icons and resources
 ```
 
+## Troubleshooting
+
+### Build Issues
+
+If you encounter `Cannot find module './out/cli/cli'` error when building:
+
+```bash
+npm uninstall electron-builder
+npm install --save-dev electron-builder
+```
+
+This fixes corrupted electron-builder installations.
+
 ## License
 
 ISC
